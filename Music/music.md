@@ -151,6 +151,15 @@ do  re  mi  fa  sol  la  si  休止符
 
 <img src="../Pictures/Music/音程转位.jpg" style="width:300px" />
 
+## 和弦
+
+### 三和弦
+
+- 三个间隔3度的相邻音。
+  - 低到高：`根音`、`三音`、`五音`。
+
+<img src="../Pictures/Music/三和弦.jpg" style="width:400px" />
+
 ## 遗留
 
 - 其他主要调式
