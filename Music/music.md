@@ -160,17 +160,13 @@ do  re  mi  fa  sol  la  si  休止符
 
 <img src="../Pictures/Music/三和弦.jpg" style="width:400px" />
 
-## 遗留
+- 三和弦的**第一转位**：根音提高八度，其余不变。和弦跨度变为六度，称为`六和弦`。
 
-- 其他主要调式
+<img src="../Pictures/Music/三和弦转位.png" style="width:400px" />
 
+- 三和弦的**第二转位**：在第一转位的基础上，三音再提高八度。称为`四六和弦`。
 
-
-
-
-
-
-
+<img src="../Pictures/Music/三和弦转位2.png" style="width:400px" />
 
 
 
