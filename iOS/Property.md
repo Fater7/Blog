@@ -80,6 +80,8 @@ static void _I_AAA_setC_(AAA * self, SEL _cmd, NSObject *c) {
 
 - 引用类型被`strong`修饰后，读写方法中对内存数据进行的类型转换，会带上`__strong`：
 
+- `__strong`的具体原理，见[Ownership](Ownership.md)一节。
+
 ```objectivec
 @property (nonatomic, strong) NSObject *d;
 
@@ -126,7 +128,7 @@ static inline void reallySetProperty(id self, SEL _cmd, id newValue, ptrdiff_t o
 
 ### weak
 
-- 详见Weak一节。
+- 详见[Weak](Weak.md)一节。
 
 ## 类属性：class
 
@@ -156,7 +158,7 @@ static inline void reallySetProperty(id self, SEL _cmd, id newValue, ptrdiff_t o
 
 - 基本用不上。
   
-  - 首先你如果想自定义读写方法，会直接覆盖，不用加@dynamic。
+  - 首先你如果想自定义读写方法，会直接覆盖，不用加`@dynamic`。
   
   - 也不会有场景故意让编译器不生成读写方法，然后自己在运行期间动态生成。
 
@@ -178,7 +180,7 @@ struct property_t {
 };
 ```
 
-- 属性生成的读写方法，同本类其他方法一样使用`method_t`结构存储，最后存于`class_ro_t.baseMethodList`的方法列表中。详见Method一节。
+- 属性生成的读写方法，同本类其他方法一样使用`method_t`结构存储，最后存于`class_ro_t.baseMethodList`的方法列表中。详见[Method](Method.md)一节。
 
 ```cpp
 struct method_t {
