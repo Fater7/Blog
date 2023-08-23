@@ -588,3 +588,4 @@ void weak_clear_no_lock(weak_table_t *weak_table, id referent_id)
 #define TABLE_SIZE(entry) (entry->mask ? entry->mask + 1 : 0)
 ```
 
+- `lockTwo`静态方法采用地址判断的方式来避免死锁。
