@@ -143,11 +143,10 @@ static objc::ExplicitInit<StripedMap<SideTable>> SideTablesMap;
 
 # 自顶向下逻辑说明
 
-- 首先要明确一个逻辑：
-    - A弱引用B，是在B的弱用表上添加上A。
-    - 所以A弱用的对象从B改为C时，会涉及两个部分：
-        - 在B的弱引用表上移除A。
-        - 在C的弱引用表上添加A。
+- 首先要明确一个逻辑：A弱引用B，是在B的弱用表上添加上A。
+- 所以A弱用的对象从B改为C时，会涉及两个部分：
+    - 在B的弱引用表上移除A。
+    - 在C的弱引用表上添加A。
 
 ## storeWeak
 
