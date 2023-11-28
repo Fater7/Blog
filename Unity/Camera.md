@@ -1,8 +1,4 @@
-# Unity零碎
-
-# Component
-
-## Camera
+# Camera
 
 - Projection：相机的模式
     - `Perspective`：透视所有渲染对象。用于3D
